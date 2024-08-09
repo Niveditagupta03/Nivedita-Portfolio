@@ -15,6 +15,7 @@ const FAQs = () => {
       maxWidth="800px"
       margin="auto"
       marginTop="35px"
+      backgroundColor="white"
     >
       <Heading as="h1" size="2xl" mb="6" fontWeight="200">
         Frequently Asked Questions

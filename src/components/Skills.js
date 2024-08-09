@@ -42,7 +42,13 @@ const skills = [
 
 const Skills = () => {
   return (
-    <Box padding="30px" maxWidth="800px" margin="auto" marginTop="35px">
+    <Box
+      padding="30px"
+      maxWidth="800px"
+      margin="auto"
+      marginTop="35px"
+      backgroundColor="white"
+    >
       <Heading as="h1" size="2xl" mb="6" textAlign="center" fontWeight="200">
         Skills
       </Heading>

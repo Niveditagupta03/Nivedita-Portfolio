@@ -9,6 +9,7 @@ const AboutMe = () => {
       maxWidth="800px"
       margin="auto"
       marginTop="35px"
+      backgroundColor="white"
     >
       <Heading as="h1" size="2xl" mb="6" textAlign="center" fontWeight="200">
         About Me

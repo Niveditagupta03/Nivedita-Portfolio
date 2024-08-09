@@ -19,7 +19,13 @@ import { BsFillLightningFill } from "react-icons/bs"; // LeetCode icon
 
 const Contact = () => {
   return (
-    <Box padding="20px" maxWidth="800px" margin="auto" marginTop="35px">
+    <Box
+      padding="20px"
+      maxWidth="800px"
+      margin="auto"
+      marginTop="35px"
+      backgroundColor="white"
+    >
       <Heading as="h1" size="2xl" mb="6" fontWeight="200">
         Contact Me
       </Heading>

@@ -13,8 +13,6 @@ function Header() {
       position="fixed"
       top="0"
       left="0"
-      zIndex="1000"
-      boxShadow="0 1px 2px rgba(0, 0, 0, 0.1)" // Optional: adds a subtle shadow
     >
       <Link as={RouterLink} to="/" padding="15px" fontSize="lg">
         <Text>Home</Text>
