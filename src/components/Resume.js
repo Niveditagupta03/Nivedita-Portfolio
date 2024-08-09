@@ -3,7 +3,7 @@ import { Box, Text, Heading } from "@chakra-ui/react";
 
 const Resume = () => {
   return (
-    <Box margin="25px" padding="70px" marginTop="35px">
+    <Box margin="25px" padding="70px" marginTop="35px" backgroundColor="white">
       <Heading as="h1" size="2xl" mb="4">
         Nivedita
       </Heading>
