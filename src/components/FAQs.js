@@ -28,9 +28,10 @@ const FAQs = () => {
           </Heading>
           <Box display="flex" justifyContent="center" mb="4">
             <Button
+              fontWeight="300"
               onClick={() => toggleOpen(0)}
               color="#7CABFD"
-              backgroundColor="#EDF2F6"
+              backgroundColor="white"
               _hover={{ backgroundColor: "#c0d7ed" }}
             >
               {open === 0 ? "Hide Answer" : "Show Answer"}
@@ -54,9 +55,10 @@ const FAQs = () => {
           </Heading>
           <Box display="flex" justifyContent="center" mb="4">
             <Button
+              fontWeight="300"
               onClick={() => toggleOpen(1)}
               color="#7CABFD"
-              backgroundColor="#EDF2F6"
+              backgroundColor="white"
               _hover={{ backgroundColor: "#c0d7ed" }}
             >
               {open === 1 ? "Hide Answer" : "Show Answer"}
@@ -80,9 +82,10 @@ const FAQs = () => {
           </Heading>
           <Box display="flex" justifyContent="center" mb="4">
             <Button
+              fontWeight="300"
               onClick={() => toggleOpen(2)}
               color="#7CABFD"
-              backgroundColor="#EDF2F6"
+              backgroundColor="white"
               _hover={{ backgroundColor: "#c0d7ed" }}
             >
               {open === 2 ? "Hide Answer" : "Show Answer"}
@@ -106,9 +109,10 @@ const FAQs = () => {
           </Heading>
           <Box display="flex" justifyContent="center" mb="4">
             <Button
+              fontWeight="300"
               onClick={() => toggleOpen(3)}
               color="#7CABFD"
-              backgroundColor="#EDF2F6"
+              backgroundColor="white"
               _hover={{ backgroundColor: "#c0d7ed" }}
             >
               {open === 3 ? "Hide Answer" : "Show Answer"}
