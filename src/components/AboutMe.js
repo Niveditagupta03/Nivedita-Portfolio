@@ -17,13 +17,14 @@ const AboutMe = () => {
 
       <Image
         borderRadius="full"
-        boxSize="400px"
+        boxSize="250px"
         src="./image.png"
         alt="Profile Picture"
         mb="6"
         display="block"
         margin="auto"
         borderStyle="solid"
+        padding="15px"
       />
 
       <VStack spacing="4" align="start">

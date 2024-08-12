@@ -89,26 +89,26 @@ const Resume = () => {
         Skills
       </Heading>
       <Text fontSize="md" mb="6">
-        - **Programming Languages**: Python, Java, C, C++
+        - Programming Languages: Python, Java, C, C++
       </Text>
       <Text fontSize="md" mb="6">
-        - **Web Development**: HTML, CSS, JavaScript, Node.js, React, Tailwind
+        - Web Development: HTML, CSS, JavaScript, Node.js, React, Tailwind
       </Text>
       <Text fontSize="md" mb="6">
-        - **Backend Development**: FastAPI, Flask, SQL, MySQL, NoSQL, MongoDB
+        - Backend Development: FastAPI, Flask, SQL, MySQL, NoSQL, MongoDB
       </Text>
       <Text fontSize="md" mb="6">
-        - **Data Science & ML**: TensorFlow, PyTorch, Scikit-learn, Numpy,
-        Pandas, Matplotlib, Jupyter, Ollama, NLTK, OpenAI, Langchain
+        - Data Science & ML: TensorFlow, PyTorch, Scikit-learn, Numpy, Pandas,
+        Matplotlib, Jupyter, Ollama, NLTK, OpenAI, Langchain
       </Text>
       <Text fontSize="md" mb="6">
-        - **Image Processing & OCR**: OpenCV, PyOCR
+        - Image Processing & OCR: OpenCV, PyOCR
       </Text>
       <Text fontSize="md" mb="6">
-        - **Containerization & DevOps**: Docker, Git
+        - Containerization & DevOps: Docker, Git
       </Text>
       <Text fontSize="md" mb="6">
-        - **IoT**: Arduino
+        - IoT: Arduino
       </Text>
 
       <Heading as="h2" size="xl" mb="4">
