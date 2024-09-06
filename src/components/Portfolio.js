@@ -17,7 +17,6 @@ const projects = [
     image: "./fi.jpg",
     link: "#",
   },
-
   {
     title: "Document Chat",
     description:
@@ -37,11 +36,10 @@ const projects = [
 const Portfolio = () => {
   return (
     <Box
-      backgroundColor="white"
       maxWidth="1200px"
-      maxHeight="400px"
       margin="auto"
       marginTop="35px"
+      backgroundColor="rgba(355, 355, 355, 0.8)"
     >
       <Heading as="h1" size="2xl" mb="6" fontWeight="200">
         Portfolio
@@ -56,24 +54,41 @@ const Portfolio = () => {
             overflow="hidden"
             boxShadow="md"
             _hover={{ boxShadow: "lg" }}
+            display="flex"
+            flexDirection="column"
+            justifyContent="space-between"
             h="100%"
           >
-            <Image
-              src={project.image}
-              alt={project.title}
-              boxSize="300px"
-              objectFit="full"
-            />
-            <Box p="6">
+            <Box
+              height="300px"
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+            >
+              <Image
+                src={project.image}
+                alt={project.title}
+                maxHeight="100%"
+                maxWidth="100%"
+                objectFit="contain"
+              />
+            </Box>
+            <Box p="6" display="flex" flexDirection="column" flexGrow="1">
               <Heading as="h2" size="lg" mb="2">
                 {project.title}
               </Heading>
               <Text mb="4">{project.description}</Text>
-              <Link href={project.link} isExternal>
-                <Button color="white" backgroundColor="#7CABFD">
-                  View Project
-                </Button>
-              </Link>
+              <Box mt="auto" pt="4" display="flex" justifyContent="center">
+                <Link color="#538ef5">
+                  <Button
+                    color="white"
+                    backgroundColor="#7CABFD"
+                    _hover={{ backgroundColor: "#538ef5" }}
+                  >
+                    View Project
+                  </Button>
+                </Link>
+              </Box>
             </Box>
           </Box>
         ))}

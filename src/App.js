@@ -60,9 +60,6 @@ function ContentWithConditionalText() {
           <Text fontSize="92px" fontWeight="100">
             I am Nivedita G
           </Text>
-          <Text fontSize="102px" fontWeight="100">
-            Presenting my Portfolio
-          </Text>
         </Flex>
       )}
       <Routes>
