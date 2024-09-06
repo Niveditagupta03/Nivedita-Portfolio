@@ -9,10 +9,11 @@ function Header() {
       justify="center"
       padding="15px"
       width="100%"
-      backgroundColor="white" // You can change this to match your design
+      backgroundColor="white"
       position="fixed"
       top="0"
       left="0"
+      borderBottom="1px solid #e0e0e0"
     >
       <Link as={RouterLink} to="/" padding="15px" fontSize="lg">
         <Text>Home</Text>

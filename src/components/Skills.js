@@ -10,6 +10,7 @@ const skills = {
     "JavaScript",
     "HTML",
     "CSS",
+    "C#",
   ],
   FrameworksLibraries: [
     "FastAPI",
@@ -22,6 +23,7 @@ const skills = {
     "Matplotlib",
     "React",
     "Tailwind",
+    ".NET Core",
   ],
   Tools: [
     "Jupyter",
@@ -39,7 +41,7 @@ const skills = {
     "IoT",
     "Arduino",
   ],
-  Databases: ["SQL", "MySQL", "NoSQL", "MongoDB"],
+  Databases: ["SQL", "MySQL", "NoSQL", "MongoDB", "Microsoft SQL Server"],
 };
 
 const Skills = () => {
@@ -49,7 +51,7 @@ const Skills = () => {
       maxWidth="800px"
       margin="auto"
       marginTop="35px"
-      backgroundColor="white"
+      backgroundColor="rgba(255, 255, 255, 0.8)"
     >
       <Heading as="h1" size="2xl" mb="6" textAlign="center" fontWeight="200">
         Skills

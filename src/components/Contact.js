@@ -15,7 +15,8 @@ import {
   AiOutlineGithub,
   AiOutlineLinkedin,
 } from "react-icons/ai";
-import { BsFillLightningFill } from "react-icons/bs"; // LeetCode icon
+import { BsFillLightningFill } from "react-icons/bs";
+import { FaTwitter, FaMediumM, FaGoogle } from "react-icons/fa"; // Twitter, Medium, and Google Cloud icons
 
 const Contact = () => {
   return (
@@ -24,7 +25,7 @@ const Contact = () => {
       maxWidth="800px"
       margin="auto"
       marginTop="35px"
-      backgroundColor="white"
+      backgroundColor="rgba(255, 255, 255, 0.8)"
     >
       <Heading as="h1" size="2xl" mb="6" fontWeight="200">
         Contact Me
@@ -78,6 +79,45 @@ const Contact = () => {
             <Flex align="center">
               <BsFillLightningFill as={AiOutlineGithub} mr="2" />
               leetcode.com/NiveditaG
+            </Flex>
+          </Link>
+        </Box>
+        <Divider />
+        <Box>
+          <Heading as="h3" size="lg" mb="2" fontWeight="100">
+            Twitter
+          </Heading>
+          <Link href="https://x.com/Niveditagupta03" isExternal>
+            <Flex align="center">
+              <Icon as={FaTwitter} mr="2" />
+              x.com/Niveditagupta03
+            </Flex>
+          </Link>
+        </Box>
+        <Divider />
+        <Box>
+          <Heading as="h3" size="lg" mb="2" fontWeight="100">
+            Medium
+          </Heading>
+          <Link href="https://medium.com/@annie.gupta03" isExternal>
+            <Flex align="center">
+              <Icon as={FaMediumM} mr="2" />
+              medium.com/@annie.gupta03
+            </Flex>
+          </Link>
+        </Box>
+        <Divider />
+        <Box>
+          <Heading as="h3" size="lg" mb="2" fontWeight="100">
+            Google Cloud Skills
+          </Heading>
+          <Link
+            href="https://www.cloudskillsboost.google/public_profiles/769508bf-c3ff-44e1-a252-1e7e568cce91"
+            isExternal
+          >
+            <Flex align="center">
+              <Icon as={FaGoogle} mr="2" />
+              cloudskillsboost.google/public_profiles/769508bf-c3ff-44e1-a252-1e7e568cce91
             </Flex>
           </Link>
         </Box>
