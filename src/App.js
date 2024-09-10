@@ -21,20 +21,20 @@ function App() {
   return (
     <ChakraProvider>
       <Router>
-        <Header /> {/* Render the Header component */}
+        <Header />
         <Box
-          marginTop="60px" // Adjust this based on the height of the fixed header
-          padding="20px" // Add padding for content
-          minHeight="100vh" // Minimum height to ensure full viewport coverage
-          backgroundImage="url('/1340.jpg')" // Correct path to the image in the public folder
-          backgroundSize="cover" // Ensure the image covers the entire area
-          backgroundRepeat="no-repeat" // Do not repeat the image
-          backgroundAttachment="fixed" // Fix the background image
-          backgroundPosition="center center" // Center the image both horizontally and vertically
-          overflowY="auto" // Allow vertical scrolling
+          marginTop="60px"
+          minHeight="100vh"
+          backgroundImage="url('/1340.jpg')"
+          backgroundSize="cover"
+          backgroundRepeat="no-repeat"
+          backgroundAttachment="fixed"
+          backgroundPosition="center center"
+          overflowY="auto"
+          padding={{ base: "10px", md: "20px", lg: "30px" }}
+          fontSize={{ base: "14px", md: "18px", lg: "22px" }}
         >
-          <ContentWithConditionalText />{" "}
-          {/* Conditionally render text and routes */}
+          <ContentWithConditionalText />
         </Box>
       </Router>
     </ChakraProvider>
@@ -49,21 +49,26 @@ function ContentWithConditionalText() {
       {location.pathname === "/" && (
         <Flex
           direction="column"
-          padding="80px"
+          padding={{ base: "20px", md: "40px", lg: "60px" }}
           justify="center"
-          minHeight="600px" // Example content height for scrolling
+          minHeight="600px"
           backgroundColor="transparent"
         >
-          <Text fontSize="82px" fontWeight="100">
+          <Text
+            fontSize={{ base: "36px", md: "48px", lg: "60px" }}
+            fontWeight="100"
+          >
             Hello there,
           </Text>
-          <Text fontSize="92px" fontWeight="100">
+          <Text
+            fontSize={{ base: "40px", md: "52px", lg: "94px" }}
+            fontWeight="100"
+          >
             I am Nivedita G
           </Text>
         </Flex>
       )}
       <Routes>
-        <Route path="/" element={<Header />} />{" "}
         <Route path="/about-me" element={<AboutMe />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/services" element={<Services />} />

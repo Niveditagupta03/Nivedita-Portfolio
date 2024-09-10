@@ -1,3 +1,4 @@
+/* Base styling */
 .App {
   text-align: center;
 }
@@ -7,12 +8,24 @@
   pointer-events: none;
 }
 
+/* Keyframes for logo spin animation */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Media query for prefers-reduced-motion */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
+/* Header styling with responsive font size and layout */
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -20,19 +33,47 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 2vmin); /* Responsive font size */
   color: white;
+  padding: 20px; /* Added padding for better spacing */
+  box-sizing: border-box; /* Ensure padding is included in element's total width and height */
 }
 
+/* Styling for links with a responsive hover effect */
 .App-link {
   color: #61dafb;
+  text-decoration: none;
+  font-size: 1.2rem; /* Slightly larger font size for better readability */
+  transition: color 0.3s ease; /* Smooth transition effect for color change */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.App-link:hover {
+  color: #21a1f1; /* Change color on hover */
+}
+
+/* Additional media queries for further responsiveness */
+@media (max-width: 768px) {
+  .App-header {
+    font-size: calc(8px + 4vmin); /* Adjust font size for smaller screens */
+    padding: 10px; /* Reduce padding on smaller screens */
   }
-  to {
-    transform: rotate(360deg);
+
+  .App-logo {
+    height: 30vmin; /* Smaller logo size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .App-header {
+    font-size: calc(
+      6px + 4vmin
+    ); /* Further adjust font size for very small screens */
+  }
+
+  .App-logo {
+    height: 20vmin; /* Even smaller logo size for very small screens */
+  }
+  .header {
+    z-index: 1000;
   }
 }

@@ -17,7 +17,13 @@ const FAQs = () => {
       marginTop="35px"
       backgroundColor="rgba(255, 255, 255, 0.8)"
     >
-      <Heading as="h1" size="2xl" mb="6" fontWeight="200">
+      <Heading
+        as="h1"
+        size={{ base: "xl", md: "2xl" }}
+        mb="6"
+        fontWeight="200"
+        textAlign="center"
+      >
         Frequently Asked Questions
       </Heading>
 

@@ -41,7 +41,7 @@ const Portfolio = () => {
       marginTop="35px"
       backgroundColor="rgba(355, 355, 355, 0.8)"
     >
-      <Heading as="h1" size="2xl" mb="6" fontWeight="200">
+      <Heading as="h1" size="2xl" mb="6" fontWeight="200" textAlign="center">
         Portfolio
       </Heading>
 
@@ -74,7 +74,7 @@ const Portfolio = () => {
               />
             </Box>
             <Box p="6" display="flex" flexDirection="column" flexGrow="1">
-              <Heading as="h2" size="lg" mb="2">
+              <Heading as="h3" size={{ base: "md", md: "lg" }} mb="2">
                 {project.title}
               </Heading>
               <Text mb="4">{project.description}</Text>

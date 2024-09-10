@@ -27,7 +27,7 @@ const Contact = () => {
       marginTop="35px"
       backgroundColor="rgba(255, 255, 255, 0.8)"
     >
-      <Heading as="h1" size="2xl" mb="6" fontWeight="200">
+      <Heading as="h1" size="2xl" mb="6" fontWeight="200" textAlign="center">
         Contact Me
       </Heading>
 
@@ -75,7 +75,7 @@ const Contact = () => {
           <Heading as="h3" size="lg" mb="2" fontWeight="100">
             LeetCode
           </Heading>
-          <Link href="https://leetcode.com/NiveditaG/" isExternal>
+          <Link href="https://leetcode.com/NiveditaG/" isExternal size="24px">
             <Flex align="center">
               <BsFillLightningFill as={AiOutlineGithub} mr="2" />
               leetcode.com/NiveditaG

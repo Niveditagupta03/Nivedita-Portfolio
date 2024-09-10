@@ -1,10 +1,26 @@
 import React from "react";
-import { Box, Heading, Text, Image, VStack } from "@chakra-ui/react";
+import {
+  Box,
+  Heading,
+  Text,
+  Image,
+  VStack,
+  useBreakpointValue,
+} from "@chakra-ui/react";
 
 const AboutMe = () => {
+  // Responsive values for padding, font size, and image size
+  const padding = useBreakpointValue({ base: "10px", md: "20px", lg: "30px" });
+  const fontSize = useBreakpointValue({ base: "sm", md: "md", lg: "lg" });
+  const boxSize = useBreakpointValue({
+    base: "200px",
+    md: "250px",
+    lg: "300px",
+  });
+
   return (
     <Box
-      padding="20px"
+      padding={padding}
       borderRadius="md"
       maxWidth="800px"
       margin="auto"
@@ -17,7 +33,7 @@ const AboutMe = () => {
 
       <Image
         borderRadius="full"
-        boxSize="250px"
+        boxSize={boxSize}
         src="./image.png"
         alt="Profile Picture"
         mb="6"
@@ -28,7 +44,7 @@ const AboutMe = () => {
       />
 
       <VStack spacing="4" align="start">
-        <Text fontSize="lg">
+        <Text fontSize={fontSize} fontWeight="300">
           Hello! I'm Nivedita, a passionate and enthusiastic individual with a
           keen interest in technology and innovation. Currently pursuing a
           Bachelor of Engineering in Information Science and Engineering from
@@ -36,7 +52,7 @@ const AboutMe = () => {
           knowledge to contribute to exciting projects and growth opportunities.
         </Text>
 
-        <Text fontSize="lg">
+        <Text fontSize={fontSize} fontWeight="300">
           Throughout my academic journey, I have developed a strong foundation
           in various programming languages and technologies. My hands-on
           experience with Python, web development, and data analysis has
@@ -44,7 +60,7 @@ const AboutMe = () => {
           deliver impactful solutions.
         </Text>
 
-        <Text fontSize="lg">
+        <Text fontSize={fontSize} fontWeight="300">
           Outside of my technical interests, I enjoy exploring new trends in the
           tech industry, participating in workshops, and continuously learning
           to stay ahead. I am committed to applying my expertise to make a
