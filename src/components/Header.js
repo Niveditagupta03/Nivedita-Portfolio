@@ -3,10 +3,32 @@ import { Flex, Text, Link, useBreakpointValue } from "@chakra-ui/react";
 import { Link as RouterLink } from "react-router-dom";
 
 function Header() {
-  // Responsive values for padding, font size, and spacing
-  const padding = useBreakpointValue({ base: "10px", md: "15px", lg: "20px" });
-  const fontSize = useBreakpointValue({ base: "sm", md: "md", lg: "lg" });
-  const spacing = useBreakpointValue({ base: "5px", md: "10px", lg: "15px" });
+  const padding = useBreakpointValue({
+    base: "1px", // Extra small devices
+    sm: "2px", // Small devices
+    md: "6px", // Medium devices
+    lg: "8px", // Large devices
+    xl: "10px", // Extra-large devices
+    "2xl": "12px", // Extra extra-large devices
+  });
+
+  const fontSize = useBreakpointValue({
+    base: "xs", // Extra small devices
+    sm: "sm", // Small devices
+    md: "md", // Medium devices
+    lg: "lg", // Large devices
+    xl: "xl", // Extra-large devices
+    "2xl": "2xl", // Extra extra-large devices
+  });
+
+  const spacing = useBreakpointValue({
+    base: "2px", // Extra small devices
+    sm: "4px", // Small devices
+    md: "6px", // Medium devices
+    lg: "8px", // Large devices
+    xl: "10px", // Extra-large devices
+    "2xl": "12px", // Extra extra-large devices
+  });
 
   return (
     <Flex
@@ -30,7 +52,7 @@ function Header() {
         padding={spacing}
         fontSize={fontSize}
       >
-        <Text>About Me</Text>
+        <Text>AboutMe</Text>
       </Link>
       <Link
         as={RouterLink}

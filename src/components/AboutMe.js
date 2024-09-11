@@ -9,7 +9,6 @@ import {
 } from "@chakra-ui/react";
 
 const AboutMe = () => {
-  // Responsive values for padding, font size, and image size
   const padding = useBreakpointValue({ base: "10px", md: "20px", lg: "30px" });
   const fontSize = useBreakpointValue({ base: "sm", md: "md", lg: "lg" });
   const boxSize = useBreakpointValue({
