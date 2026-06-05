@@ -4,7 +4,6 @@ import {
   Heading,
   Text,
   VStack,
-  Divider,
   Tag,
   SimpleGrid,
   Link,
