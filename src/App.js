@@ -12,6 +12,7 @@ import Articles from "./components/Articles";
 import Contact from "./components/Contact";
 import FAQs from "./components/FAQs";
 import Skills from "./components/Skills";
+import Footer from "./components/Footer";
 
 function AppContent() {
   const bgGradient = useColorModeValue(
@@ -25,12 +26,15 @@ function AppContent() {
       bgGradient={bgGradient}
       bgAttachment="fixed"
       transition="background 0.3s ease-in-out"
+      display="flex"
+      flexDirection="column"
     >
       <Header />
       <Box
         mt="60px"
         padding={{ base: "10px", md: "20px", lg: "30px" }}
         fontSize={{ base: "14px", md: "18px", lg: "22px" }}
+        flex="1"
       >
         <Routes>
           <Route path="/" element={<Home />} />
@@ -44,6 +48,7 @@ function AppContent() {
           <Route path="/skills" element={<Skills />} />
         </Routes>
       </Box>
+      <Footer />
     </Box>
   );
 }
